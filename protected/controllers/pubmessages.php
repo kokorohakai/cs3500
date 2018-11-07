@@ -14,7 +14,7 @@ class pubmessagesController{
 		$data = MODEL::dangerousExec($sqlStr);
 		foreach( $data as $key=>$value){
 			unset($data[$key]["password"]);
-			unset($data[$key]["10"]);
+			unset($data[$key]["9"]);
 		}
 			
 		return $data;
