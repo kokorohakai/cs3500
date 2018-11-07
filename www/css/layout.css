@@ -1,0 +1,116 @@
+.my-nav-bg{
+    background:url("/img/tile.png");
+}
+.body-content{
+    background:url("/img/background.png");
+    padding:20px;
+}
+.footer{
+    color:white;
+    padding:20px;
+}
+.fun-divider{
+    background:url("/img/layer.png");
+}
+.centered{
+    margin-left:auto;
+    margin-right:auto;
+    float:none;
+}
+small.is-invalid {
+    color:red;
+}
+small.is-valid{
+    color:green;
+}
+html,body {
+    background:rgb(0,0,32);
+}
+h1 {
+	color:#007;
+}
+/*
+permission icons
+*/
+.perm-sm-layout{
+    width:60px;
+    min-width:60px;
+    padding:17px;
+}
+.perm-sm{
+    height:24px;
+    width:24px;
+    margin:0px;
+    background-image: url("/img/permissions-sm.png");
+    background-repeat: no-repeat;
+    padding:0px;
+    display:inline-block;
+}
+.public{
+    background-position:0px 0px;
+}
+.friends{
+    background-position:0px -24px;
+}
+.private{
+    background-position:0px -48px;
+}
+.avatar-lg{
+    width:200px;
+}
+.avatar-sm{
+    width:64px;
+    height:64px;
+}
+
+/*****************
+* Like icons
+****************/
+.likes{
+    height:16px;
+    width:16px;
+    line-height:16px;
+    margin:0px;
+    background-image: url("/img/likes.png");
+    background-repeat: no-repeat;
+    padding:0px;
+    display:inline-block;
+}
+.unlike{
+    background-position:0px 0px;
+}
+.like{
+    background-position:0px -16px;
+}
+@keyframes searchHide{
+    from { 
+        height:400px;
+    }
+    to { 
+        height:0px;
+    }
+}
+@keyframes searchShow{
+    from { 
+        height:0px;
+    }
+    to { 
+        height:400px;
+    }
+}
+#searchbox{
+    height:0px;
+    overflow-y:scroll;
+    display: block;
+    height:0px;
+}
+#searchbox.hide{
+    height:0px;
+    animation-name: searchHide;
+    animation-duration: 1s;
+}
+#searchbox.show{
+    height:400px;
+    animation-name: searchShow;
+    animation-duration: 1s;
+}
