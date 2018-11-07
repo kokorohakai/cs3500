@@ -54,7 +54,6 @@
 			} else {
 				require("../protected/sections/404.php");
 			}
-			echo $section."<br>".$user;
 			?>
 		</div>
 		<div class="container-fluid legal footer">

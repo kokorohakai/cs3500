@@ -93,13 +93,16 @@ App.Home = function(parent){
         tagMessage( msg.message ) +
         '</div>' +
         getImage() + 
-        '<div class="card-footer">' +
-          '<button class="btn btn-light like-button" messageid="'+ msg[0] + '" id="likeButton' + msg[0] + '">'+
-            '<span id="likeIcon'+msg[0]+'" class="likes unlike"></span>'+
-            '<span id="likeMessage'+msg[0]+'">Like</span>'+
-          '</button>&nbsp;&nbsp;'+
-          '<button class="btn btn-primary">Reply</button>'+
-        '</div>' +
+        ( ( parent.userid ) ? (
+          '<div class="card-footer">' +
+            '<button class="btn btn-light like-button" messageid="'+ msg[0] + '" id="likeButton' + msg[0] + '">'+
+              '<span id="likeIcon'+msg[0]+'" class="likes unlike"></span>'+
+              '<span id="likeMessage'+msg[0]+'">Like</span>'+
+            '</button>&nbsp;&nbsp;'+
+            '<button class="btn btn-primary">Reply</button>'+
+          '</div>' ) : 
+          "" 
+        ) +
       '</div>';
     if (bottom){
       $("#messages").append(html);
